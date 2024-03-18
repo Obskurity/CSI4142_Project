@@ -9,7 +9,7 @@ Group Members:
 
 The datasets used can be found here:
 1. https://www.statcan.gc.ca/en/lode/databases/odrsf
-2. Link
+2. [Link](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger.cfm?Lang=E)
 
 Make sure Python, Jupyter Notebook, and Pandas are all installed.
 
