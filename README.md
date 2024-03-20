@@ -1,4 +1,5 @@
 # CSI4142_Project
+The purpose of this project is to identify the correlation between the amount of recreation centres in Ontario, and the demographics in those certain areas.
 
 Group Members:
  - Arthur Wang (300185298)
