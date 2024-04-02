@@ -3,7 +3,7 @@ CREATE TABLE FacilityTypes (
     FType VARCHAR(255) NOT NULL
 );
 
-/* PQSL for importing: \copy FacilityTypes FROM 'D:\..\CSI4142\CSI
+/* PQSL for importing: \copy FacilityTypes FROM 'D:\..\CSI
 4142_Project\facility_type_df.csv' DELIMITER ',' CSV HEADER; */
 
 Create TABLE AgeDemographics(
