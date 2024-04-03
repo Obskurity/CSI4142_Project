@@ -3,8 +3,7 @@ CREATE TABLE FacilityTypes (
     FType VARCHAR(255) NOT NULL
 );
 
-/* PQSL for importing: \copy FacilityTypes FROM 'D:\..\CSI
-4142_Project\facility_type_df.csv' DELIMITER ',' CSV HEADER; */
+-- PQSL for importing: \copy FacilityTypes FROM 'D:\..\CSI4142_Project\facility_type_df.csv' DELIMITER ',' CSV HEADER;
 
 Create TABLE AgeDemographics(
 	Age_City_ID VARCHAR(255) PRIMARY KEY NOT NULL,
@@ -33,8 +32,7 @@ Create TABLE AgeDemographics(
     "100 years and over" INT NOT NULL
 );
 
-/* PSQL for importing: \copy AgeDemographics FROM 'D:\..\CSI
-4142_Project\age_df.csv' DELIMITER ',' CSV HEADER; */
+-- PSQL for importing: \copy AgeDemographics FROM 'D:\..\CSI4142_Project\age_df.csv' DELIMITER ',' CSV HEADER;
 
 CREATE TABLE EthnicityDemographics (
     Ethnicity_City_ID VARCHAR(255) PRIMARY KEY NOT NULL,
@@ -54,7 +52,7 @@ CREATE TABLE EthnicityDemographics (
     "Not a visible minority" INT NOT NULL
 );
 
-/* PSQL for importing: \copy ethnicityDemographics FROM 'D:\..\eth_df.csv' DELIMITER ',' CSV HEADER; */
+-- PSQL for importing: \copy ethnicityDemographics FROM 'D:\..\eth_df.csv' DELIMITER ',' CSV HEADER;
 
 CREATE TABLE Facilities (
     Facility_ID INT PRIMARY KEY,
@@ -69,21 +67,21 @@ CREATE TABLE Facilities (
     FOREIGN KEY(Facility_Type_ID) REFERENCES FacilityTypes(Facility_Type)
 );
 
-/* PSQL import: \copy Facilities FROM 'D:\..\facility_df.csv' DELIMITER ',' CSV HEADER; */
+-- PSQL import: \copy Facilities FROM 'D:\..\facility_df.csv' DELIMITER ',' CSV HEADER;
 
 CREATE TABLE AgeMapping (
     Age_ID INT PRIMARY KEY NOT NULL,
     Age_Range VARCHAR(255) NOT NULL
 );
 
-/* PSQL import: \copy AgeMapping FROM 'D:\..\CSI4142_Project\age_mapping.csv' DELIMITER ',' CSV HEADER; */
+-- PSQL import: \copy AgeMapping FROM 'D:\..\CSI4142_Project\age_mapping.csv' DELIMITER ',' CSV HEADER;
 
 CREATE TABLE EthnicityMapping (
     Ethnicity_ID INT PRIMARY KEY NOT NULL,
     Ethnicity VARCHAR(255) NOT NULL
 );
 
-/* PSQL import: \copy ethnicityMapping FROM 'D:\..\CSI4142_Project\eth_mapping.csv' DELIMITER ',' CSV HEADER; */
+-- PSQL import: \copy ethnicityMapping FROM 'D:\..\CSI4142_Project\eth_mapping.csv' DELIMITER ',' CSV HEADER;
 
 CREATE TABLE FactTable (
     City VARCHAR(255) NOT NULL,
@@ -99,4 +97,4 @@ CREATE TABLE FactTable (
     FOREIGN KEY (Highest_Population_Ethnicity_ID) REFERENCES EthnicityMapping(Ethnicity_ID)
 );
 
-/* PSQL import: \copy FactTable FROM 'D:\..\CSI4142_Project\fact_df.csv' DELIMITER ',' CSV HEADER; */
+-- PSQL import: \copy FactTable FROM 'D:\..\CSI4142_Project\fact_df.csv' DELIMITER ',' CSV HEADER;
