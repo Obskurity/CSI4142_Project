@@ -157,7 +157,3 @@ AVG(ft.Facility_Count) OVER age_window AS Avg_Facility_Count
 FROM agedemographics a
 JOIN facttable ft ON a.Age_City_ID = ft.Age_City_ID AND a.City = ft.City
 WINDOW age_window AS (PARTITION BY a.City, a.Age_City_ID)
-
-
-
-
