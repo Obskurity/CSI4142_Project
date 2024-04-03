@@ -122,7 +122,7 @@ ORDER BY total_sum DESC
 LIMIT 10;
 
 -- Windowing Queries
-For each facility type, we look at which cities have the most of a certain facility and look at the average number of times that facility pops up as. We rank each city based on how many times it has that specific facility_type_id.
+-- For each facility type, we look at which cities have the most of a certain facility and look at the average number of times that facility pops up as. We rank each city based on how many times it has that specific facility_type_id.
 WITH ranked_facilities AS (
  SELECT
 City,
