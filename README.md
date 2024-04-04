@@ -9,8 +9,8 @@ Group Members:
 **Running the Notebook**
 
 The datasets used can be found here(too large to upload to GitHub):
-1. [ODRSF](https://www.statcan.gc.ca/en/lode/databases/odrsf) - [Download](https://www150.statcan.gc.ca/n1/en/pub/21-26-0002/2021001/ODRSF_v1.0.zip)
-2. [Ontario_Demographics](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger.cfm?Lang=E) - [Download](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger/comp/GetFile.cfm?Lang=E&FILETYPE=CSV&GEONO=021)
+1. [ODRSF](https://www.statcan.gc.ca/en/lode/databases/odrsf) - [Download](https://www150.statcan.gc.ca/n1/en/pub/21-26-0002/2021001/ODRSF_v1.0.zip) - Only the ODRSF_v1.0.csv file
+3. [Ontario_Demographics](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger.cfm?Lang=E) - [Download](https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/prof/details/download-telecharger/comp/GetFile.cfm?Lang=E&FILETYPE=CSV&GEONO=021) - should be the biggest csv file
 
 Make sure Python, Jupyter Notebook, and Pandas are all installed.
 
